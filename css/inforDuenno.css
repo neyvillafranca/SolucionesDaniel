@@ -1,0 +1,88 @@
+.autor-container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border: 2px solid #e0e0e0;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+.autor-container h1 {
+    text-align: center;
+    color: #28a745;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.autor-container p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+
+
+.contenedor-info {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* separación entre imagen y texto */
+}
+
+
+.texto-info p {
+    margin: 0 0 10px 0;
+}
+
+/* Contiene el texto a la izquierda y las certificaciones a la derecha */
+.contenedor-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Texto a la izquierda */
+.texto-info {
+    flex: 1;
+}
+
+/* CERTIFICACIONES a la derecha */
+.certificaciones {
+    display: flex;
+    flex-direction: row;   /* Imágenes una debajo de otra */
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    
+}
+
+/* Tamaño de cada certificado */
+.certificaciones img {
+    width: 400px;
+    height: 280px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.certificacion img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* RESPONSIVO — Imagen arriba y texto abajo en pantallas pequeñas */
+@media (max-width: 550px) {
+    .contenedor-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .certificaciones {
+        width: 70%;
+        display: block;
+        flex-direction: column;
+    }
+}
+

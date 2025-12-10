@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/servicioLinea.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Soluciones Daniel</title>
+</head>
+
+<body>
+    <header class="header_section bg-dark">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <!-- Logo -->
+                <div data-aos="flip-left" data-aos-duration="3000"
+                    class="logo col-12 col-lg-3 text-center text-lg-start py-2">
+                    <a href="index.html">
+                        <img src="imagenes/logo2-SolucionesDaniel.png" alt="Logo Soluciones Daniel"
+                            class="img-fluid col-6" style="max-height: 80px;">
+                    </a>
+                </div>
+
+                <!-- Navbar -->
+                <div class="nav col-12 col-lg-9">
+                    <nav class="navbar navbar-expand-lg navbar-dark">
+                        <div class="container-fluid content justify-content-lg-end">
+                            <!-- Botón hamburguesa -->
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <!-- Menú -->
+                            <div class="collapse navbar-collapse justify-content-lg-center" id="navbarNavAltMarkup">
+                                <div class="navbar-nav">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                                    <a class="nav-link" href="contacto.html">Contactos</a>
+                                    <a class="nav-link" href="Nosotros.html">Nosotros</a>
+                                    <a class="nav-link" href="servicioLinea.html">Reserva de Servicios en linea</a>
+                                    <a class="nav-link" href="autor.html">Autor</a>
+                                </div>
+                                <form class="d-flex" onsubmit="buscarProducto(event)">
+                                    <input id="busqueda-input" class="form-control me-2" type="search"
+                                        placeholder="Buscar..." aria-label="Search">
+                                    <button id="btn-buscar" class="btn btn-warning" type="submit">Buscar</button>
+                                </form>
+
+                                <!-- Ícono del carrito con contador -->
+                                <div class="ms-3 d-flex align-items-center">
+                                    <a href="#" class="text-white position-relative" id="icono-carrito">
+                                        <i class="bi bi-cart fs-4"></i>
+                                        <span
+                                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success"
+                                            id="contador-carrito">
+                                            0
+                                        </span>
+                                    </a>
+                                    <span class="ms-2 text-white fw-bold" id="total-carrito">0,00 $</span>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- servicio en linea -->
+    <main>
+        <section id="menu" class="menu section-bg">
+
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>Nuestro Servicios</h2>
+                    <p>Descubre nuestros servicios</p>
+                </div>
+
+                <div class="row" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-lg-12 d-flex justify-content-center">
+                        <ul id="menu-flters">
+                            <li id="All" class="filter-active filmenu">Todos</li>
+                            <li id="MecanicaGeneral" class="filmenu">Mecanica General</li>
+                            <li id="Computarizado" class="filmenu">Computarizado</li>
+                            <li id="CambioAceite" class="filmenu">Cambio Aceite</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+
+                <div id="menu-container-id" class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+
+
+                </div>
+
+            </div>
+
+
+        </section>
+        <!-- Galería de servicios -->
+        <div class="container my-5">
+            <div data-aos="flip-left" data-aos-duration="3000" class="row" id="contenerdor-servicios">
+
+            </div>
+
+        </div>
+
+        
+    </main>
+    <!-- Carrito lateral -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="carritoOffcanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">CESTA DE LA COMPRA</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+        </div>
+        <div class="offcanvas-body" id="carrito-contenido">
+            <!-- Aquí se llenará el contenido del carrito -->
+        </div>
+        <div class="px-3 pb-3">
+            <p><strong>Total:</strong> <span id="carrito-total">0 €</span></p>
+            <button id="btnIrPago" class="btn btn-primary w-100">Realizar el pago</button>
+
+            <a href="tienda.html" class="d-block text-center mt-2">Seguir comprando</a>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Información de Contacto -->
+            <div data-aos="zoom-out-right" class="footer-info">
+                <h4>Nuestra tienda</h4>
+                <p><strong>📍 Ubicación:</strong> Puntarenas, Puntarenas, Aranjuez 25 metros norte del super chino El
+                    Fenix Dorado</p>
+                <p><strong>📞 Teléfono:</strong> +506 8359-3594</p>
+                <p><strong>📧 Email:</strong> solucionesdaniel@gmail.com</p>
+                <p><strong>🕒 Horario:</strong> Lunes - Viernes: 6 AM - 10 PM, Sabado: 3 PM - 9 PM</p>
+            </div>
+
+            <!-- Enlaces de Navegación -->
+            <div data-aos="zoom-out-right" class="footer-links">
+                <h4>🔗 Contáctanos </h4>
+                <ul>
+                    <li><a href="index.html">🏠 Inicio</a></li>
+                    <li><a href="contacto.html">📞 Contacto</a></li>
+                    <li><a href="nosotros.html">ℹ Nosotros</a></li>
+                    <li><a href="ReservaLinea.html">🛒 Reserva de Servicios en Linea</a></li>
+                    <li><a href="autor.html">ℹ Autor</a></li>
+                </ul>
+            </div>
+
+            <!-- Redes Sociales -->
+            <div data-aos="zoom-out-right" class="footer-social">
+                <h4>🌍 Síguenos</h4>
+                <div class="social-icons d-flex align-items-center gap-3 mt-3">
+                    <a href="https://www.facebook.com" target="_blank" class="text-white fs-3">
+                        <i class="bi bi-facebook"></i> <span class="ms-2 fs-5">Facebook</span>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" class="text-white fs-3">
+                        <i class="bi bi-instagram"></i> <span class="ms-2 fs-5">Instagram</span>
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank" class="text-white fs-3">
+                        <i class="bi bi-twitter"></i> <span class="ms-2 fs-5">Twitter</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Derechos Reservados -->
+        <p class="footer-rights">© 2025 Soluciones Daniel - Todos los derechos reservados.</p>
+
+
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="js/servicioLinea.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

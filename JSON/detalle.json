@@ -1,0 +1,28 @@
+{
+    "servicios": [
+        {
+            "id": 1,
+            "titulo": "Mecánica General",
+            "descripcion": "Solucionamos fallos mecánicos y eléctricos de forma rápida y profesional.",
+            "imagenes":  "imagenes/mecanica-general-1.jpg"
+            
+        },
+        {
+            "id": 2,
+            "titulo": "Cambio de Aceite",
+            "descripcion": "Usamos aceites de alta calidad que garantizan el mejor rendimiento de tu motor.",
+            "imagenes": "imagenes/cambio-aceite-2.jpg"
+                
+            
+        },
+            {
+            "id": 3,
+            "titulo": "Cambio de Aceite",
+            "descripcion": "Realizamos análisis computarizado de última generación para detectar fallas con precisión y rapidez.",
+            "imagenes": "imagenes/computarizado-3.jpg"
+                
+            
+        }
+        
+    ]
+}

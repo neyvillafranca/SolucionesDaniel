@@ -1,0 +1,266 @@
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: visible;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.logo img {
+    object-fit: contain;
+}
+
+.card-img-top {
+
+    
+    max-height: 250px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #212529;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #6c757d;
+}
+
+.btn-primary {
+    background-color: #0046ff;
+    border: none;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: #0033cc;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.btn.btn-link {
+    color: #666;
+}
+
+.btn-outline-dark {
+    font-weight: 500;
+}
+
+.row {
+    row-gap: 2rem;
+}
+
+.badge-nuevo {
+    background-color: #2dc653;
+    color: white;
+    font-size: 0.8rem;
+    padding: 0.4em 0.7em;
+    border-radius: 5px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.card-body {
+    position: relative;
+}
+
+/* 1. Contenedor Principal */
+.gallery-container {
+    position: relative;
+    /* Es crucial para posicionar las flechas dentro */
+    max-width: 800px;
+    margin: 0 auto;
+    user-select: none;
+    /* Evita que se seleccione el texto al hacer clic */
+}
+
+/* 2. Estilos del Visor de Imagen */
+.main-image-viewer {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    /* Asegura que la imagen no se salga */
+}
+
+.main-image-viewer img {
+    width: 100%;
+    /* La imagen ocupa todo el contenedor */
+    display: block;
+    height: auto;
+}
+
+/* 3. Estilos de las Flechas de Navegación */
+.nav-control {
+    position: absolute;
+    top: 50%;
+    /* Centrado vertical */
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo semitransparente */
+    color: white;
+    border: none;
+    padding: 15px 10px;
+    cursor: pointer;
+    z-index: 10;
+    /* Asegura que estén por encima de la imagen */
+    font-size: 24px;
+    transition: background-color 0.3s;
+}
+
+.nav-control:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev-btn {
+    left: 0;
+    border-radius: 0 5px 5px 0;
+    /* Borde redondeado solo en el lado derecho */
+}
+
+.next-btn {
+    right: 0;
+    border-radius: 5px 0 0 5px;
+    /* Borde redondeado solo en el lado izquierdo */
+}
+
+/* 4. Estilos de las Miniaturas */
+.thumbnails-row {
+    display: flex;
+    /* Muestra las miniaturas una al lado de la otra */
+    justify-content: center;
+    gap: 10px;
+    /* Espacio entre miniaturas */
+    padding-top: 15px;
+    overflow-x: auto;
+    /* Permite desplazarse horizontalmente si hay muchas */
+}
+
+.thumb {
+    width: 80px;
+    /* Tamaño de la miniatura */
+    height: 60px;
+    cursor: pointer;
+    opacity: 0.6;
+    /* Un poco transparentes por defecto */
+    transition: opacity 0.3s, border 0.3s;
+    border: 2px solid transparent;
+}
+
+.thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Asegura que la imagen cubra el área sin distorsionarse */
+    display: block;
+}
+
+/* Estilo para la miniatura activa */
+.thumb.active {
+    opacity: 1;
+    /* Miniatura actual completamente visible */
+    border: 2px solid #007bff;
+    /* Borde para indicar que está seleccionada */
+}
+
+.grow {
+    transition: .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
+}
+
+.grow:hover {
+    transform: scale3d(1.05, 1.05, 1);
+    -webkit-transform: scale3d(1.05, 1.05, 1);
+    -moz-transform: scale3d(1.05, 1.05, 1);
+}
+.rotate-360{
+    transition: .5s, color .10s;
+        -webkit-transition: .5s, color .10s;
+        -moz-transition: .5s, color .10s;
+}
+.rotate-360:hover{
+    transform: rotateZ(360deg);
+        -webkit-transform: rotateZ(360deg);
+        -moz-transform: rotateZ(360deg);
+}
+
+#menu {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);;
+}
+
+#menu .section-title h2 {
+    font-weight: 700;
+    font-size: 32px;
+    color: #333;
+}
+
+#menu .section-title p {
+    font-size: 15px;
+    color: #666;
+}
+
+/* ==== FILTROS ==== */
+#menu-flters {
+    padding: 0;
+    margin: 0 auto 25px auto;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+#menu-flters li {
+    cursor: pointer;
+    font-size: 16px;
+    color: #555;
+    font-weight: 500;
+    transition: 0.3s ease;
+    position: relative;
+    padding: 5px 10px;
+}
+
+/* Hover */
+#menu-flters li:hover {
+    color: #007bff;
+}
+
+/* Active seleccionado */
+#menu-flters .filter-active {
+    color: #007bff;
+    font-weight: 700;
+}
+
+/* Subrayado animado */
+#menu-flters li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #007bff;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: width .3s ease;
+}
+
+#menu-flters li:hover::after,
+#menu-flters .filter-active::after {
+    width: 100%;
+}

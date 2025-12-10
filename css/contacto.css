@@ -1,0 +1,435 @@
+/* Estilos generales */
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+/* Animación general */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Contenedor principal */
+.contacto-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contacto-form .card {
+    border-radius: 16px;
+    border: none;
+    background: #ffffff;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+    animation: fadeIn .6s ease-in-out;
+}
+/* Animación suave */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Mejor separación del formulario */
+.contacto-wrapper {
+    gap: 30px !important;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .contacto-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacto-form,
+    .contacto-info {
+        width: 100%;
+    }
+}
+
+/* Título del formulario */
+.contacto-form h3 {
+    font-weight: 700;
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #0d6efd;
+}
+
+/* Inputs más modernos */
+.contacto-form .form-control,
+.contacto-form .form-select {
+    border-radius: 12px;
+    padding: 12px;
+    border: 1px solid #d0d0d0;
+    transition: 0.3s;
+}
+
+.contacto-form .form-control:focus,
+.contacto-form .form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+}
+
+/* Botón bonito */
+.contacto-form button {
+    border-radius: 12px;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.contacto-form button:hover {
+    background-color: #0b5ed7;
+    transform: translateY(-3px);
+}
+/* Título */
+.titulo-contacto {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #007bff;
+}
+
+/* Wrapper de Contacto */
+.contacto-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Estilos del formulario */
+.contacto-form,
+.contacto-info {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulario */
+.contacto-form h3,
+.contacto-info h3 {
+    margin-bottom: 15px;
+    color: #343a40;
+}
+
+/* Botón Enviar */
+.btn-primary {
+    width: 100%;
+    background: #007bff;
+    border: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+}
+
+/* Estilos de la información de contacto */
+.contacto-info p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+
+/* Redes Sociales */
+.social-icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+
+.social-icons a img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-info,
+    .footer-links,
+    .footer-social {
+        margin-bottom: 20px;
+    }
+}
+
+.btn-elegante {
+    background: #f5d06f;
+    color: #1b1f2a;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: 2px solid #f5d06f;
+    transition: 0.3s ease;
+    width: 180px;
+    text-align: center;
+}
+
+.btn-elegante:hover {
+    
+    transform: translateY(-3px);
+}
+
+.btn-elegante a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+
+/* Footer */
+.footer {
+    background: #222;
+    color: white;
+    padding: 30px 0;
+    margin-top: 40px;
+}
+
+.footer-container {
+    width: 100%;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* Información de Contacto */
+.footer-info,
+.footer-links,
+.footer-social {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.footer-info h4,
+.footer-links h4,
+.footer-social h4 {
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+/* Enlaces de navegación */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ffcc00;
+}
+
+/* Redes Sociales */
+.social-icons {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Derechos Reservados */
+.footer-rights {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+
+
+#map {
+    width: 100vw;
+    margin: 0;
+}
+
+@-webkit-keyframes rubberBand {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes rubberBand {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.rubberBand {
+    -webkit-animation-name: rubberBand;
+    animation-name: rubberBand;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+/* Footer responsive redes sociales */
+@media (max-width: 600px) {
+    .social-icons {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .social-icons a {
+        flex: 1 1 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .social-icons span {
+        font-size: 1rem;
+        display: inline-block;
+        word-break: break-word;
+    }
+}

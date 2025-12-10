@@ -1,0 +1,117 @@
+{
+    "tienda": [
+        {
+            "id": 1,
+            "clasificacion": "MecanicaGeneral",
+            "descripcion": "Cambio de Inyectores y calibracion de valvulas",
+            "precio": 30000,
+            "imagen": "imagenes/mecanica-general-1.jpg"
+        },
+        {
+            "id": 2,
+            "clasificacion": "Computarizado",
+            "descripcion": "Revision de bateria",
+            "precio": 10000,
+            "imagen": "imagenes/computarizado-1.jpg"
+        },
+        {
+            "id": 3,
+            "clasificacion": "Computarizado",
+            "descripcion": "Revision de sistema relay",
+            "precio": 10000,
+            "imagen": "imagenes/computarizado-2.jpg"
+        },
+        {
+            "id": 4,
+            "clasificacion": "MecanicaGeneral",
+            "descripcion": "Reparacion de sistema de freno",
+            "precio": 50000,
+            "imagen": "imagenes/mecanica-general.jpg"
+        },
+        {
+            "id": 5,
+            "clasificacion": "MecanicaGeneral",
+            "descripcion": "Revision de inyectores mecanicos",
+            "precio": 45000,
+            "imagen": "imagenes/mecanica-general-2.jpg"
+        },
+        {
+            "id": 6,
+            "clasificacion": "MecanicaGeneral",
+            "descripcion": "Revision de inyectores electronicos",
+            "precio": 45000,
+            "imagen": "imagenes/mecanica-general-3.jpg"
+        },
+        {
+            "id": 7,
+            "clasificacion": "CambioAceite",
+            "descripcion": "Cambio de retenedor de bocina",
+            "precio": 15000,
+            "imagen": "imagenes/cambio-aceite-1.jpg"
+        },
+        {
+            "id": 8,
+            "clasificacion": "MecanicaGeneral",
+            "descripcion": "Reparacion de distribucion",
+            "precio": 50000,
+            "imagen": "imagenes/mecanica-general-4.jpg"
+        },
+        {
+            "id": 9,
+            "clasificacion": "CambioAceite",
+            "descripcion": "Cambio de bomba de inyeccion",
+            "precio": 70000,
+            "imagen": "imagenes/cambio-aceite-2.jpg"
+        },
+        {
+            "id": 10,
+            "clasificacion": "MecanicaGeneral",
+            "descripcion": "Instalación de turbo",
+            "precio": 40000,
+            "imagen": "imagenes/mecanica-general-5.jpg"
+        },
+        {
+            "id": 11,
+            "clasificacion": "MecanicaGeneral",
+            "descripcion": "Cambio de compensadores",
+            "precio": 20000,
+            "imagen": "imagenes/mecanica-general-6.jpg"
+        },
+        {
+            "id": 12,
+            "clasificacion": "MecanicaGeneral",
+            "descripcion": "Cambio de motor",
+            "precio": 130000,
+            "imagen": "imagenes/mecanica-general-7.jpg"
+        },
+        {
+            "id": 13,
+            "clasificacion": "MecanicaGeneral",
+            "descripcion": "Cambio de poleas y retenedor de damper",
+            "precio": 25000,
+            "imagen": "imagenes/mecanica-general-8.jpg"
+        },
+        
+        {
+            "id": 14,
+            "clasificacion": "MecanicaGeneral",
+            "descripcion": "Reparacion de empaque de cabezote",
+            "precio": 90000,
+            "imagen": "imagenes/mecanica-general-10.jpg"
+        },
+        {
+            "id": 15,
+            "clasificacion": "MecanicaGeneral",
+            "descripcion": "Reparacion de suspencion delantera",
+            "precio": 80000,
+            "imagen": "imagenes/mecanica-general-11.jpg"
+        },
+        {
+            "id": 16,
+            "clasificacion": "Computarizado",
+            "descripcion": "Escaneo por problema de la EMS",
+            "precio": 15000,
+            "imagen": "imagenes/computarizado-3.jpg"
+        }
+    ]
+}

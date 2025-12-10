@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Soluciones Daniel</title>
+</head>
+
+<body>
+    <header class="header_section bg-dark">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <!-- Logo -->
+                <div data-aos="flip-left" data-aos-duration="3000"
+                    class="logo col-12 col-lg-3 text-center text-lg-start py-2">
+                    <a href="index.html">
+                        <img src="imagenes/logo2-SolucionesDaniel.png" alt="Logo Soluciones Daniel"
+                            class="img-fluid col-6" style="max-height: 80px;">
+                    </a>
+                </div>
+
+                <!-- Navbar -->
+                <div class="nav col-12 col-lg-9">
+                    <nav class="navbar navbar-expand-lg navbar-dark">
+                        <div class="container-fluid content justify-content-lg-end">
+                            Botón hamburguesa
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+
+                            <div class="collapse navbar-collapse justify-content-lg-center" id="navbarNavAltMarkup">
+                                <div class="navbar-nav">
+                                    <a class="nav-link active col-2 mx-2 icon-link" aria-current="page"
+                                        href="index.html">Inicio</a>
+                                    <a class="nav-link col-2 mx-2 icon-link" href="contacto.html">Contactos</a>
+                                    <a class="nav-link col-2 mx-2 icon-link-hover" href="Nosotros.html">Nosotros</a>
+                                    <a class="nav-link col-2 mx-2 icon-link-hover" href="servicioLinea.html">Reserva de
+                                        Servicios en linea</a>
+                                    <a class="nav-link col-2 mx-2 icon-link-hover" href="autor.html">Autor</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Carrousel-->
+    <main class="main-section">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagenes/carrousel-1.jpg" class="d-block w-100 object-fit-cover" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>BIENVENIDOS A DANIEL SOLUCIONES</h2>
+                        <p>El lugar donde encontraras las solucione al problema de tu vehiculo</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/carrousel-2.jpg" class="d-block w-100 object-fit-cover" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>BIENVENIDOS A DANIEL SOLUCIONES</h2>
+                        <p>El lugar donde encontraras las solucione al problema de tu vehiculo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <main id="contenido-servicios" class="contenido-servicios">
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <section class="seccion-nuestros-servicios container my-0 py-5">
+            <h2 class="text-center mb-4 text-primary">Nuestros Servicios</h2>
+            <div id="contenido" data-aos="fade-up" data-aos-offset="200" data-aos-anchor-placement="top-bottom"
+                class="row g-4">
+                <!--<article class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagenes/mecanica-general.jpg" class="card-img-top" alt="Servicio 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Mecánica General</h5>
+                            <p class="card-text">Solucionamos fallos mecánicos y eléctricos de forma rápida y
+                                profesional.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagenes/servicio2.jpg" class="card-img-top" alt="Servicio 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Cambio de Aceite</h5>
+                            <p class="card-text">Usamos aceites de alta calidad que garantizan el mejor rendimiento de
+                                tu motor.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagenes/servicio3.jpg" class="card-img-top" alt="Servicio 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Diagnóstico Computarizado</h5>
+                            <p class="card-text">Identificamos con precisión los problemas de tu vehículo con equipos
+                                modernos.</p>
+                        </div>
+                    </div>
+                </article>-->
+            </div>
+
+
+        </section>
+        <!-- REDES SOCIALES -->
+        <!--<aside class="aside-redes text-center  text-white py-3 w-25">
+            <h5>Síguenos en redes sociales</h5>
+            <p>Mantente al tanto de promociones, consejos y noticias del taller.</p>
+            <div class="redes d-flex justify-content-center gap-3 mt-2">
+                <a href="#" class="text-white fs-4"><i class="bi bi-facebook">1</i></a>
+                <a href="#" class="text-white fs-4"><i class="bi bi-instagram">2</i></a>
+                <a href="#" class="text-white fs-4"><i class="bi bi-tiktok">3</i></a>
+                <a href="https://wa.me/506XXXXXXXX" class="text-white fs-4">4<i class="bi bi-whatsapp"></i></a>
+            </div>
+        </aside>-->
+        <section class="container my-5" data-aos="flip-left" data-aos-duration="25000" data-aos-offset="350"
+            data-aos-anchor-placement="top-bottom" data-aos-easing="ease-out-cubic">
+            <h3 class="text-center mb-3">
+                Decodificar Número VIN</h3>
+
+            <div class="card card-vin p-4 shadow-sm">
+                <label for="input-vin" class="form-label fw-bold text-center">Ingresa el VIN (17 caracteres):</label>
+                <input type="text" id="input-vin" class="form-control mb-3" maxlength="17"
+                    placeholder="Ej: 3VW9X7A58HM000100">
+
+                <button id="btn-decodificar" class="btn btn-primary w-100" onclick="">
+                    Consultar Información del Vehículo
+                </button>
+            </div>
+            <div id="barra-carga" class="loader-container" style="display:none;">
+                <div class="loader-bar">
+                    <div class="loader-progress"></div>
+                </div>
+                <p id="loader-text">0%</p>
+            </div>
+
+            <div id="resultado-vin" class="mt-4"></div>
+        </section>
+
+        <section class="video-giant mt-5" data-aos="fade-right" data-aos-offset="900"
+            data-aos-easing="ease-in-sine">
+            <h2 class="text-center mb-4">Un video con nuestro logo</h2>
+            <div class="video-container">
+                <iframe height="634" src="https://www.youtube.com/embed/0Vmx_HfELKI" title="Logo SolucionesDaniel"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            </div>
+        </section>
+
+    </main>
+    <section id="audio-player" class="boton-audio">
+        <button id="audio-toggle" class="audio-toggle-btn" title="Reproducir música de fondo">
+            <i class="bi bi-music-note-beamed"></i>
+        </button>
+
+        <audio id="background-audio" autoplay loop>
+            <source src="audio/audio-ofina.mp3" type="audio/mpeg">
+            Tu navegador no soporta audio
+        </audio>
+    </section>
+    
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Información de Contacto -->
+            <div class="footer-info">
+                <h4>Nuestra tienda</h4>
+                <p><strong>📍 Ubicación:</strong> Puntarenas, Puntarenas, Aranjuez 25 metros norte del super chino El
+                    Fenix Dorado</p>
+                <p><strong>📞 Teléfono:</strong> +506 8359-3594</p>
+                <p><strong>📧 Email:</strong> solucionesdaniel@gmail.com</p>
+                <p><strong>🕒 Horario:</strong> Lunes - Viernes: 6 AM - 10 PM, Sabado: 3 PM - 9 PM</p>
+            </div>
+
+            <!-- Enlaces de Navegación -->
+            <div class="footer-links">
+                <h4>🔗 Contáctanos </h4>
+                <ul>
+                    <li><a href="index.html">🏠 Inicio</a></li>
+                    <li><a href="contacto.html">📞 Contacto</a></li>
+                    <li><a href="nosotros.html">ℹ Nosotros</a></li>
+                    <li><a href="ReservaLinea.html">🛒 Reserva de Servicios en Linea</a></li>
+                    <li><a href="autor.html">ℹ Autor</a></li>
+                </ul>
+            </div>
+
+            <!-- Redes Sociales -->
+            <div class="footer-social">
+                <h4>🌍 Síguenos</h4>
+                <div class="social-icons d-flex align-items-center gap-3 mt-3">
+                    <a href="https://www.facebook.com" target="_blank" class="text-white fs-3">
+                        <i class="bi bi-facebook"></i> <span class="ms-2 fs-5">Facebook</span>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" class="text-white fs-3">
+                        <i class="bi bi-instagram"></i> <span class="ms-2 fs-5">Instagram</span>
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank" class="text-white fs-3">
+                        <i class="bi bi-twitter"></i> <span class="ms-2 fs-5">Twitter</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Derechos Reservados -->
+        <p class="footer-rights">© 2025 Soluciones Daniel - Todos los derechos reservados.</p>
+
+
+
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="js/detalle.js"></script>
+    <script>
+        // Esperar 2 segundos y eliminar TODOS los placeholder-glow y placeholder
+        setTimeout(() => {
+            document.querySelectorAll(".placeholder-glow, .placeholder, .col-2, .mx-2").forEach(el => {
+                el.classList.remove("placeholder-glow");
+                el.classList.remove("placeholder");
+                el.classList.remove("col-2");
+                el.classList.remove("mx-2");
+            });
+        }, 2000);
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: false,
+            easing: 'ease-out-cubic'
+        });
+    </script>
+
+</body>
+
+</html>
