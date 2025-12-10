@@ -119,7 +119,7 @@
     }
 
     .collection {
-        height: 70vh;
+        height: 95vh;
         padding: 20px;
     }
 
@@ -136,20 +136,143 @@
     }
 }
 
-@media (max-width: 480px) {
-    .sobre-nosotros {
-        font-size: 1.4rem;
+/* ===================== */
+/*    SECCIÓN PRINCIPAL  */
+/* ===================== */
+
+.collection {
+    height: 95vh; /* más grande */
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.collection .content {
+    height: auto;
+    max-height: 38rem;
+    width: 40rem;
+    background-color: #1b1f2a;
+    border: .2rem solid rgba(255, 255, 255, .1);
+    border-radius: .7rem;
+    border-bottom: .4rem solid #0099ff;
+    border-top: .4rem solid #0099ff;
+    overflow: hidden;
+}
+
+.content img {
+    width: 100%;
+    height: 250px; /* más pequeño para dar espacio al texto */
+    object-fit: cover;
+    border-bottom-left-radius: .6rem;
+    border-bottom-right-radius: .6rem;
+}
+
+.text-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 20px;
+}
+
+.text-content h3 {
+    margin-top: 5px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.text-content p {
+    width: 90%;
+    font-size: .9rem;
+    text-align: center;
+    line-height: 1.3rem;
+}
+
+/* ===================== */
+/*     TABLETS / MEDIO   */
+/* ===================== */
+
+@media (max-width: 768px) {
+
+    .collection {
+        height: 100vh;
+    }
+
+    .collection .content {
+        width: 90%;
+        max-height: 36rem;
+    }
+
+    .content img {
+        height: 220px;
     }
 
     .text-content h3 {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     .text-content p {
         font-size: 0.85rem;
     }
+}
+
+/* ===================== */
+/*      CELULARES        */
+/* ===================== */
+
+@media (max-width: 480px) {
+
+    .collection {
+        height: 110vh; /* más grande para caber todo */
+    }
 
     .collection .content {
+        max-height: 34rem;
+        width: 100%;
         border-radius: 0.5rem;
+    }
+
+    .content img {
+        height: 200px;
+    }
+
+    .text-content h3 {
+        font-size: 1.1rem;
+    }
+
+    .text-content p {
+        font-size: 0.8rem;
+        width: 95%;
+    }
+}
+
+/* ===================== */
+/*   PANTALLAS 378PX     */
+/* ===================== */
+
+@media (max-width: 378px) {
+
+    .collection {
+        height: 120vh; /* aún más alto */
+    }
+
+    .collection .content {
+        max-height: 32rem;
+    }
+
+    .content img {
+        height: 180px;
+    }
+
+    .text-content h3 {
+        font-size: 1rem;
+    }
+
+    .text-content p {
+        font-size: 0.75rem;
+        line-height: 1.1rem;
+        width: 95%;
     }
 }
