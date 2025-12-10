@@ -264,3 +264,27 @@ a.btn.btn-link {
 #menu-flters .filter-active::after {
     width: 100%;
 }
+/* Teléfonos muy pequeños (378px o menos) */
+@media (max-width: 378px) {
+    #menu-flters {
+        display: flex;
+        overflow-x: auto; /* Permite hacer scroll horizontal */
+        gap: 8px;
+        padding-bottom: 12px;
+    }
+
+    #menu-flters::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    #menu-flters::-webkit-scrollbar-thumb {
+        background: #007bff;
+        border-radius: 10px;
+    }
+
+    #menu-flters li {
+        flex: 0 0 auto;
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
